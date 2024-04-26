@@ -6,4 +6,4 @@
 
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/b6792f1d-1070-4a17-83ee-28edb7041a6e)
 
-可以在 files 找到 vpn_bittorrent.pcap 用 wireshark 打開觀察。
+可以在 files 找到 vpn_hangouts_chat1a.pcap 用 wireshark 打開觀察(用來試試看而已另一個 vpn_bittorrent.pcap 更多 http traffic 但傳不上來)。
