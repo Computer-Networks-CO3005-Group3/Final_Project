@@ -5,6 +5,7 @@
 1. 自動讀取資料夾(Testpcap_folder)中為.pcap的檔案
 2. 遍歷.pcap檔中的所有使用 HTTP portacal 的封包資料
 3. 存取封包資料到 http_packets 這個 dict 變數中
+test1.py和資料夾都已經上傳到github了。大家可以試試
 
 以下是結果截圖:
 ![111111111](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/11f551f4-ae38-4fec-a58a-72b88caf9f66)
