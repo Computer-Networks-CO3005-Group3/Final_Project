@@ -6,12 +6,13 @@
 2. 遍歷.pcap檔中的所有使用 HTTP portacal 的封包資料
 3. 存取封包資料到 http_packets 這個 dict 變數中
 
-以下是畫面截圖:
+以下是結果截圖:
 ![111111111](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/11f551f4-ae38-4fec-a58a-72b88caf9f66)
+上圖是wireshark的分析截圖；下面是python執行結果。
 第二筆和最後一筆紀錄都有對應到，數量也正確。資料正確無誤地從檔案裡讀出來。
 
 Q:
-1. 紀錄的timestep其實是epchtime(一個從1970開始算的絕對時間?)，論文中的Pi要的是時間差，要做進一步處理
+1. 紀錄的timestep其實是epchtime(一個從1970開始算的絕對時間?)，論文中的Pi要的是時間差，要做進一步處理(還是可以用其他紀錄的特徵時間做?ex: time since reference or first frame)
 2. Pi中的時間差描述:"inter–time between i − th packet and the preceding one belonging to the same flow (seconds)" 代表要找出同一個流的 HTTP ? By How? 我的想法是可以去比對封包的 source ip 及 destination ip 若兩項交叉相等，則可視為同一個flow(對話) 想法而已還沒做...
 
 
