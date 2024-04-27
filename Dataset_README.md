@@ -14,6 +14,7 @@
 Q:
 1. 紀錄的timestep其實是epchtime(一個從1970開始算的絕對時間?)，論文中的Pi要的是時間差，要做進一步處理(還是可以用其他紀錄的特徵時間做?ex: time since reference or first frame)
 2. Pi中的時間差描述:"inter–time between i − th packet and the preceding one belonging to the same flow (seconds)" 代表要找出同一個流的 HTTP ? By How? 我的想法是可以去比對封包的 source ip 及 destination ip 若兩項交叉相等，則可視為同一個flow(對話) 想法而已還沒做...
+3. 抽取出來的紀錄應該要用什麼樣的格式後面比較好處理? dict? array?
 
 
 ## 4/26 datateam 會議 (Dylan, Ingrid)
