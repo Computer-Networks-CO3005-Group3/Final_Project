@@ -2,7 +2,7 @@
 
 ## 4/27 實作紀錄 (Dylan)
 弄了一支 test1.py 可以做到:
-1. 自動讀取資料夾中為.pcap的檔案
+1. 自動讀取資料夾(Testpcap_folder)中為.pcap的檔案
 2. 遍歷.pcap檔中的所有使用 HTTP portacal 的封包資料
 3. 存取封包資料到 http_packets 這個 dict 變數中
 
