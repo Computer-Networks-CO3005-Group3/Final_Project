@@ -1,5 +1,9 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
 
+## 4/28 進度&方向 確認
+1. 確定 Regular & Tunneled 流量來源問題(都能夠從ISCX-VPN-NonVPN-2016裡去獲取嗎?還是要自己做)
+2. 要判斷 http 對話群組中，封包的時間差。怎麼判斷兩個封包是對話群組?
+
 ## 4/27 實作紀錄 (Dylan)
 弄了一支 test1.py 可以做到:
 1. 自動讀取資料夾(Testpcap_folder)中為.pcap的檔案
@@ -16,6 +20,10 @@ Q:
 1. 紀錄的timestep其實是epchtime(一個從1970開始算的絕對時間?)，論文中的Pi要的是時間差，要做進一步處理(還是可以用其他紀錄的特徵時間做?ex: time since reference or first frame)
 2. Pi中的時間差描述:"inter–time between i − th packet and the preceding one belonging to the same flow (seconds)" 代表要找出同一個流的 HTTP ? By How? 我的想法是可以去比對封包的 source ip 及 destination ip 若兩項交叉相等，則可視為同一個flow(對話) 想法而已還沒做...
 3. 抽取出來的紀錄應該要用什麼樣的格式後面比較好處理? dict? array?
+
+4/28 Ans:
+1. 兩個時間(sec)都可以用來計算時間差，效果是一樣的
+2. 還在研究
 
 ## 4/26 datateam 會議 (Dylan, Ingrid)
 1. 只抓 HTTP 流量(HTTP 附近會有 TCP 的流量形成對話組，只管HTTP)
