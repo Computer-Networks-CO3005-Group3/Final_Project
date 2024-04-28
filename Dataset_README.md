@@ -26,7 +26,7 @@ Q:
 2. 我們要抓多少量?(目前抓最小的兩個 zip 就要快 7 個小時)
 
 4/28 Ans:
-1. vpn_資料夾裡的 HTTP 應該就是 Tunneled HTTP(by 老師的回信"自行生成數據的話可以用VPN")。不過我覺得可以用 Reference[2]的 tunneled traffic 製造器去自己做，然後比對看看(比對vpn的http流量和用Ref[2]製造的流量，特徵有什麼不一樣)
+1. vpn_資料夾裡的 HTTP 應該就是 Tunneled HTTP(by 老師的回信"自行生成數據的話可以用VPN")。不過我覺得可以用 Reference[2]的 tunneled traffic 製造器去自己做，然後比對看看(比對vpn的http流量和用Ref[2]製造的流量，特徵有什麼不一樣) <font color="#f00">待確認</font>
 2. 盡量多抓，越多越好
 
 ## 4/26 dataset progress record (Dylan)
