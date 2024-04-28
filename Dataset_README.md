@@ -17,7 +17,6 @@ Q:
 2. Pi中的時間差描述:"inter–time between i − th packet and the preceding one belonging to the same flow (seconds)" 代表要找出同一個流的 HTTP ? By How? 我的想法是可以去比對封包的 source ip 及 destination ip 若兩項交叉相等，則可視為同一個flow(對話) 想法而已還沒做...
 3. 抽取出來的紀錄應該要用什麼樣的格式後面比較好處理? dict? array?
 
-
 ## 4/26 datateam 會議 (Dylan, Ingrid)
 1. 只抓 HTTP 流量(HTTP 附近會有 TCP 的流量形成對話組，只管HTTP)
 2. 用 python 寫好讀入.pcap檔->過濾處理封包->得到我們要的 HTTP traffic 的特性(time, size) 存成矩陣
@@ -25,6 +24,10 @@ Q:
 Q:
 1. non_vpn_資料夾裡的 HTTP 流量就是regular的流量? 而vpn_資料夾裡的 HTTP 就是有 Tunneled 的流量?
 2. 我們要抓多少量?(目前抓最小的兩個 zip 就要快 7 個小時)
+
+4/28 Ans:
+1. vpn_資料夾裡的 HTTP 應該就是 Tunneled HTTP(by 老師的回信) 可以用 Reference[2]的 tunneled traffic 製造器去做去自己做，然後比對看看(老師說自行生成數據的話可以用VPN)
+2. 盡量多抓，越多越好
 
 ## 4/26 dataset progress record (Dylan)
 
