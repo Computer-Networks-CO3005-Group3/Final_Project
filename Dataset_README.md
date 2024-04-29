@@ -1,12 +1,13 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
 
+## 4/29 meeting
+1. 先看一下 non-VPN & VPN HTTP流量的差別
+2. 計算時間差(delta t)應該是 Source ip & Destination ip 都相同算通一個 flow(方向相同)，同個 flow 上的 packet 去算時間差 (第一個pkt沒有時間差)
+3. 用 lib 儲存資料，分 flow 去存，給.csv出來 (要記錄是regular還是non-regular)
+
 ## 4/28 進度&方向 確認
 1. 確定 Regular & Tunneled 流量來源問題(都能夠從ISCX-VPN-NonVPN-2016裡去獲取嗎?還是要自己做)
 2. 要判斷 http 對話群組中，封包的時間差。怎麼判斷兩個封包是對話群組?
-
-4/29 Ans:
-1. 先看一下 non-VPN & VPN HTTP流量的差別
-2. 應該是 Source ip & Destination ip 都相同算通一個 flow(方向相同)，同個 flow 上的 packet 去算時間差 (第一個pkt沒有時間差)
 
 ## 4/27 實作紀錄 (Dylan)
 弄了一支 test1.py 可以做到:
