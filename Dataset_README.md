@@ -1,7 +1,7 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
 
 ## 4/29 Group meeting
-1. 先看一下 non-VPN & VPN HTTP流量的差別 (沒看出個所以然)
+1. 先看一下 non-VPN & VPN HTTP流量的差別 (沒看出個所以然，就當沒錯繼續做吧!)
 2. 計算時間差(delta t)應該是 Source ip & Destination ip 都相同算通一個 flow(方向相同)，同個 flow 上的 packet 去算時間差 (第一個pkt沒有時間差)
 3. 用 lib 儲存資料，分 flow 去存，給.csv出來 (要記錄是regular還是non-regular)
 
