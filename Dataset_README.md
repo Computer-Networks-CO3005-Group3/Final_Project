@@ -6,8 +6,9 @@
 2. 遍歷.pcap/.pcapng檔中"所有"使用 HTTP portacal 的封包資料
 3. 計算相同flow下pkt的時間差(相同flow:在相同的 source_ip & destination_ip 組合下的封包)
 4. 每個獨立.pcap/.pcapng檔都獨立輸出各自的.csv檔(因為dataset是分不同應用的流量就不同一個pcap file)
-5. 輸出的.csv內容是: 照順序排列的pi(有兩個column，first_col 為 pkt_size；second_col 為 time_diff)
-time_diff.py和資料夾都已經上傳到github了。大家可以試試
+5. 輸出的.csv內容是: 照順序排列的pi(有兩個column，first_col 為 pkt_size；second_col 為 time_diff) csv_folder裡面可以看。
+time_diff.py和test_dataset資料夾都已經上傳到github了。大家可以試試。
+
 
 驗證時差算對:
 ![時差完成](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/83a4b9e8-d649-493d-a495-d25fbe0ad872)
