@@ -1,5 +1,19 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
 
+## 4/30 實作紀錄 (Dylan)
+修改了 test1.py，新版的是 time_diff.py 它可以做到:
+1. 自動讀取資料夾(Testpcap_folder)中為.pcap或.pcapng的檔案(可以混雜兩種)
+2. 遍歷.pcap/.pcapng檔中"所有"使用 HTTP portacal 的封包資料
+3. 計算相同flow下pkt的時間差(相同flow:在相同的 source_ip & destination_ip 組合下的封包)
+4. 每個獨立.pcap/.pcapng檔都獨立輸出各自的.csv檔(因為dataset是分不同應用的流量就不同一個pcap file)
+5. 輸出的.csv內容是: 照順序排列的pi(有兩個column，first_col 為 pkt_size；second_col 為 time_diff)
+time_diff.py和資料夾都已經上傳到github了。大家可以試試
+
+驗證時差算對:
+![時差完成](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/83a4b9e8-d649-493d-a495-d25fbe0ad872)
+左邊是wireshark的畫面，No.2796, No.2840, No.2851都是同一個 flow (其他的pkt都是flow的唯一，time_diff都是0)用這三個pkt算彼此的時間差會跟程式跑出來的一樣。正確
+
+
 ## 4/29 Group meeting
 1. 先看一下 non-VPN & VPN HTTP流量的差別 (沒看出個所以然，就當沒錯繼續做吧!)
 2. 計算時間差(delta t)應該是 Source ip & Destination ip 都相同算通一個 flow(方向相同)，同個 flow 上的 packet 去算時間差 (第一個pkt沒有時間差)
