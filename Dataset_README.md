@@ -1,7 +1,7 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
 
 ## 4/30 實作紀錄 (Dylan)
-修改了 test1.py，新版的是 time_diff.py 它可以做到:
+修改了 test1.py，新版的是 time_diff_April30_v1.py 它可以做到:
 1. 自動讀取資料夾(Testpcap_folder)中為.pcap或.pcapng的檔案(可以混雜兩種)
 2. 遍歷.pcap/.pcapng檔中"所有"使用 HTTP portacal 的封包資料
 3. 計算相同flow下pkt的時間差(相同flow:在相同的 source_ip & destination_ip 組合下的封包)
