@@ -1,7 +1,7 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
 
 ## 5/1 上傳紀錄 & 相關內容說明 (Dylan)
-最新的程式是: Pi_scratcher_Apr30_v1.py，可以做到前面程式全部功能(修正了一點bug)，外加紀錄了 src.ip & dest.ip **已驗證程式功能正確**
+最新的程式是: Pi_scratcher_Apr30_v1.py，可以做到前面程式全部功能(修正了一點bug)，外加紀錄了 src.ip & dest.ip **(已驗證程式功能正確)**
 1. NonVPNcsv_01_folder 資料夾裡面就是 NonVPNcsv_01 的所有應用網路流量，依據不同應用分開抓取裡面流量紀錄中的 HTTP traffic。目測是對的，待更進一步抽檢內容。(已確認)
 2. Non-VPN 資料夾裡的 HTTP 是 regular http；VPN 資料夾裡的就是 tunneled http
 
