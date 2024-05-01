@@ -1,5 +1,9 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
 
+## 5/1 上傳紀錄 (Dylan)
+NonVPNcsv_01_folder 資料夾裡面就是 NonVPNcsv_01 的所有應用網路流量，依據不同應用分開抓取裡面流量紀錄中的 HTTP traffic。
+目測是對的，待更進一步抽檢內容。
+
 ## 4/30 實作紀錄 (Dylan)
 修改了 test1.py，新版的是 time_diff_April30_v1.py 它可以做到:
 1. 自動讀取資料夾(Testpcap_folder)中為.pcap或.pcapng的檔案(可以混雜兩種)
