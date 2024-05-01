@@ -8,7 +8,8 @@ NonVPNcsv_01_folder 資料夾裡面就是 NonVPNcsv_01 的所有應用網路流�
 ![555555](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/dc6f94af-9db7-456e-bd81-0f8b7203a0f6)
 ![66666](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/05a5cea3-042e-4850-b084-b47b7831adeb)
 
-而 Testcsv_folder 和 Testpcap_folder 這兩個資料夾都是為了測試而生的小量數據，他們跟 dataset 完全沒有關係，但理論上是 regular http 且驗證過是沒問題的，你們如果有測試需求又不要跑太大量的資料，可以先用這兩個 Test 開頭裡面的東西。 
+而 Testcsv_folder 和 Testpcap_folder 這兩個資料夾都是為了測試而生的小量數據，他們跟 dataset 完全沒有關係，但理論上是 regular http 且驗證過是沒問題的，你們如果有測試需求又不要跑太大量的資料，可以先用這兩個 Test 開頭裡面的東西。
+**還有一個重點是，可能會發現很多CSV file打開裡面沒有數據，那就代表那個.pcap檔裡面所有流量都沒有使用到 HTTP protocal喔!**
 
 ---
 ## 4/30 實作紀錄 (Dylan)
