@@ -1,8 +1,8 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
 
 ## 5/1 上傳紀錄 & 相關內容說明 (Dylan)
-NonVPNcsv_01_folder 資料夾裡面就是 NonVPNcsv_01 的所有應用網路流量，依據不同應用分開抓取裡面流量紀錄中的 HTTP traffic。
-目測是對的，待更進一步抽檢內容。
+1. NonVPNcsv_01_folder 資料夾裡面就是 NonVPNcsv_01 的所有應用網路流量，依據不同應用分開抓取裡面流量紀錄中的 HTTP traffic。目測是對的，待更進一步抽檢內容。
+2. Non-VPN 資料夾裡的 HTTP 是 regular http；VPN 資料夾裡的就是 tunneled http
 
 關於dataset的概念:
 ![555555](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/dc6f94af-9db7-456e-bd81-0f8b7203a0f6)
