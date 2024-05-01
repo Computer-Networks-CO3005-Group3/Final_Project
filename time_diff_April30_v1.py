@@ -46,8 +46,8 @@ class PcapAnalyzer:
                     query_table[(source_ip, destination_ip)].append(timestamp)
 
                 http_packet = {
-                    # 'source_ip': source_ip,
-                    # 'destination_ip': destination_ip,
+                    'source_ip': source_ip,
+                    'destination_ip': destination_ip,
                     'packet_size': packet.length,
                     'time_diff': time_diff
                 }
@@ -61,8 +61,7 @@ class PcapAnalyzer:
 
     def save_to_csv(self, http_packets, filename):
         print("[writing csv]", filename)
-        # fieldnames = ['source_ip', 'destination_ip', 'packet_size', 'time_diff']
-        fieldnames = ['packet_size', 'time_diff']
+        fieldnames = ['source_ip', 'destination_ip', 'packet_size', 'time_diff']
         # 構建CSV文件的完整路徑
         desktop_path = Path.home() / "C:/Users/User/Desktop"
         csv_filepath = desktop_path / f"{filename.replace('.pcap', '').replace('.pcapng', '')}.csv"
@@ -79,6 +78,7 @@ class PcapAnalyzer:
         print("[writing end]")
 
 # Usage
+# folder_path = 'C:/Users/User/Desktop/Testpcap_folder'
 folder_path = 'C:/Users/User/Desktop/Testpcap_folder'
 analyzer = PcapAnalyzer(folder_path)
 analyzer.analyze_pcap_files()
