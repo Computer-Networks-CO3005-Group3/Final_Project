@@ -1,7 +1,7 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
 
 ## 5/1 上傳紀錄 & 相關內容說明 (Dylan)
-1. NonVPNcsv_01_folder 資料夾裡面就是 NonVPNcsv_01 的所有應用網路流量，依據不同應用分開抓取裡面流量紀錄中的 HTTP traffic。目測是對的，待更進一步抽檢內容。
+1. NonVPNcsv_01_folder 資料夾裡面就是 NonVPNcsv_01 的所有應用網路流量，依據不同應用分開抓取裡面流量紀錄中的 HTTP traffic。目測是對的，待更進一步抽檢內容。(已確認)
 2. Non-VPN 資料夾裡的 HTTP 是 regular http；VPN 資料夾裡的就是 tunneled http
 
 關於dataset的概念:
@@ -10,6 +10,20 @@
 
 而 Testcsv_folder 和 Testpcap_folder 這兩個資料夾都是為了測試而生的小量數據，他們跟 dataset 完全沒有關係，但理論上是 regular http 且驗證過是沒問題的，你們如果有測試需求又不要跑太大量的資料，可以先用這兩個 Test 開頭裡面的東西。
 **還有一個重點是，可能會發現很多CSV file打開裡面沒有數據，那就代表那個.pcap檔裡面所有流量都沒有使用到 HTTP protocal喔!**
+
+針對 NonVPNcsv_01_folder 抽出來的資料用 wireshark 做驗證(封包是否一致、時差是否正確、csv內的資料量是否吻合封包量)，五筆結果:(左邊是 wireshark 截圖；右邊是用 Excel 開啟的 csv 檔)
+
+1.
+![抽驗1](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/31523919-657f-43a8-89af-4d5e908ad206)
+2.
+![抽驗二](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/6c33e338-6389-492e-a494-dcb99d425637)
+3.
+![抽驗三](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/40747c74-135c-4069-9aa7-a30eca6285c7)
+4.
+![抽驗四](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/910ef0d6-e129-48f2-907e-8c7d63f3c009)
+5.
+![抽檢五](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/ce054318-7ea5-42b4-9e5d-774597903834)
+以上可以確認程式抓出來是正確的結果!
 
 ---
 ## 4/30 實作紀錄 (Dylan)
