@@ -59,4 +59,4 @@ def process_traffic_data(input_file, output_file, original_class):
 # TEST (input_file_path, output_file_path,  original_class)
 process_traffic_data('D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/NonVPNcsv-01/',
                       'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/TEST_NonVPNcsv-01/', 
-                      'tunneled http traffic')
+                      'regular http traffic')
