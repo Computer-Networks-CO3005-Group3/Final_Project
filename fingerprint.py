@@ -31,7 +31,7 @@ class HTTPFingerprint:
             for size, (count, total_delta_t) in packet_stats[packet_id].items(): # 統計每個封包大小出現的次數(count)及時間間隔總和
                 avg_delta_t = total_delta_t / count if count > 0 else 0 # 特定封包大小的平均時間間隔, 當count=0表示沒有出現過
                 pdf[size - 40, int(np.log10(avg_delta_t) * 100)] = count # 將count填入pdf矩陣的對應位置,因封包最小為40,因此將實際大小減40以獲得矩陣的行位置
-                # np.log10...,對平均時間進行離散化(-7~3),再*100放大，且取整數,對應pdf列
+                # np.log10...,對平均時間進行離散化(-7~3),再*100放大，且取整數,對應到pdf列
             # 標準化PDF矩陣
             pdf /= np.sum(pdf) # 使總和為1
 
@@ -45,8 +45,8 @@ class HTTPFingerprint:
         traffic_traces = []
         with open(csv_filepath, 'r') as csvfile:
             reader = csv.DictReader(csvfile)
-            for row in reader: # 每一行對應一個trace，含pkt_size t_diff
-                trace = [(int(row['packet_size']), float(row['time_diff']))] # 將每行數據轉換為pkt_size, t_diff 
+            for row in reader: # 每一行對應一個trace，含pkt_size、t_diff
+                trace = [(int(row['packet_size']), float(row['time_diff']))] # 將每行數據轉換為pkt_size、t_diff 
                 traffic_traces.append(trace) # 加到traffic_trace列表
         return traffic_traces # 返回列表
 
@@ -57,8 +57,8 @@ class HTTPFingerprint:
     @staticmethod
     def gaussian(size, sigma):
         x = np.arange(0, size, 1, float)
-        y = np.exp(-((x - size // 2) ** 2) / (2 * sigma ** 2)) # 根據每定的size和sigma，計算高斯分佈的一維向量, //是整數除法,只取整數
-        return y / np.sum(y)  #將向量正歸化，使總和為1
+        y = np.exp(-((x - size // 2) ** 2) / (2 * sigma ** 2)) # 根據給定的size和sigma，計算高斯分佈的一維向量, //是整數除法,只取整數
+        return y / np.sum(y)  #將向量normalized，使總和為1
 
     def get_fingerprint(self):
         return np.concatenate(self.pdfs) # 將self.pdfs列表中的所有PDF矩陣連接起來，形成最終HTTP Fingerprint
