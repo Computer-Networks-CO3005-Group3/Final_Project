@@ -16,6 +16,7 @@
 4.  #### 紀錄size跟package的最大值及最小值   
 5.  #### 儲存處裡好的資料至csv檔案中，檔名與原輸入檔案相同   
 6.  #### 每個csv包含(src_ip, dest_ip, pkt_size, time_diff, original_class)   
+#### 注意！在讀取 CSV 檔案後，資料將以列表（list）的形式被讀取   
    
 ##### 2024/05/03 更新   
    
