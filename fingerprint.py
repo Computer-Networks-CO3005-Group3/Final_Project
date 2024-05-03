@@ -63,7 +63,7 @@ class HTTPFingerprint:
     def get_fingerprint(self):
         return np.concatenate(self.pdfs) # 將self.pdfs列表中的所有PDF矩陣連接起來，形成最終HTTP Fingerprint
 
-# 使用示例
+##########################################
 #desktop_path = Path.home() / "Desktop"
 #csv_filepath = desktop_path / "captured_traffic.csv"  # 假設已經使用 PcapAnalyzer 程式生成了這個 CSV 文件
 
