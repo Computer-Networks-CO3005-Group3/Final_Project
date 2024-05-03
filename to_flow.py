@@ -54,7 +54,6 @@ def process_traffic_data(input_file, output_file, original_class):
     print(f"Min pkt_size: {min_pkt_size}")
     print(f"Max time_diff: {max_time_diff}")
     print(f"Min time_diff: {min_time_diff}")
-    print("File output completed!!!")
 
 # TEST (input_file_path, output_file_path,  original_class)
 process_traffic_data('D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/NonVPNcsv-01/',
