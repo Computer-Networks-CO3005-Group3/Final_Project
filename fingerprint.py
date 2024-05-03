@@ -44,7 +44,7 @@ class HTTPFingerprint:
         #從 CSV 文件中讀取 HTTP 流量數據
         traffic_traces = []
         with open(csv_filepath, 'r') as csvfile:
-            reader = csv.DictReader(csvfile)
+            reader = csv.DictReader(csvfile) #加地址
             for row in reader: # 每一行對應一個trace，含pkt_size、t_diff
                 trace = [(int(row['packet_size']), float(row['time_diff']))] # 將每行數據轉換為pkt_size、t_diff 
                 traffic_traces.append(trace) # 加到traffic_trace列表
