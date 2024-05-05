@@ -25,7 +25,26 @@
    
 ##### 2024/05/04 更新   
    
-# calculate_anomaly_score.py  
+# calculate_anomaly_score_V2.py  
 -------------  
    
-### 待更新   
+-   ### get_Z_sequence(F, pdf_vector)   
+    #### 把單一個F(flow)中的值(每個package的Pi)和pdf矩陣餵入，並計算出每個Pi的Zi，存成list回傳。   
+
+-   ### calculate_anomaly_score(z_sequence, l_pdf, l_f, epsilon=1e-8)   
+    #### 根據求出的Zi、pdf矩陣長度(regular http traffic package 數量)、待測flow長度(package 數量)、自訂epsilon=1e-8，計算出Sn(anomaly_score)，並且回傳從i=1到i=Nsects的所有Sn值。   
+
+-   ### read_pdf_matrix   
+    #### 從csv讀入pdf矩陣存成list後回傳。   
+
+-   ### classify_traffic   
+    #### 透過判斷Sn是否大於閾值(T=1)，回傳該待測F(flow)為regular http traffic或tunneling http traffic。   
+
+-   ### process_csv_files   
+1.  #### 讀入指定路徑下的所有待測F(flow)。
+2.  #### 計算待測F的Zi
+3.  #### 計算待測F的Sn
+4.  #### 判斷待測F為regular http traffic或tunneling http traffic，將(src_ip, dest_ip,  original_class, s_n,  new_class)依次存入csv檔中，並且每個檔案中為i相同的多個flow。
+
+    
+##### 2024/05/05 更新   
