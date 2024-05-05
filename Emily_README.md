@@ -18,10 +18,10 @@
 6.  #### 每個csv包含(src_ip, dest_ip, pkt_size, time_diff, original_class)   
 #### 注意！在讀取 CSV 檔案後，資料將以列表（list）的形式被讀取   
 
-![圖片](/D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/PICTURES/005710.png)   
-![圖片](/D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/PICTURES/005541.png)   
-![圖片](/D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/PICTURES/005630.png)   
-![圖片](/D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/PICTURES/005759.png)   
+![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/005710.png)   
+![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/005541.png)   
+![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/005630.png)   
+![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/005759.png)   
    
 ##### 2024/05/04 更新   
    
