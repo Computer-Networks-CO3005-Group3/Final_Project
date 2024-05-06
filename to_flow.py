@@ -44,6 +44,7 @@ def process_traffic_data(input_file, output_file, original_class):
                             flow_dir = os.path.join(output_file, filename)
                             os.makedirs(flow_dir, exist_ok=True)
                             output_file_path = os.path.join(flow_dir, f"{flow_key[0]}_{flow_key[1]}.csv")
+                            #output_file_path = os.path.join(output_file, f"{flow_key[0]}_{flow_key[1]}.csv")
 
                             # write_csv
                             with open(output_file_path, 'w', newline='') as f:
@@ -63,6 +64,6 @@ def process_traffic_data(input_file, output_file, original_class):
     print(f"Min time_diff: {min_time_diff}")
 
 # TEST
-process_traffic_data('D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/NonVPNcsv-01/', 
-                     'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/TEST_NonVPNcsv-01/', 
+process_traffic_data('D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/VPNcsv-01/', 
+                     'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/TEST_VPNcsv-01/', 
                      'regular http traffic')
