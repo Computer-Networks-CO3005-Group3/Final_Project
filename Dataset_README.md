@@ -1,11 +1,11 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
 
-## 5/7 dataset 抓取完畢 已放在資料夾中
-### Regular http traffic:
+## 5/7 dataset 抓取完畢
+### Regular http traffic 的資料夾:
 1. NonVPNcsv-01
 2. NonVPNcsv-02 (後面四個檔案 example_pcap、.txt檔 沒有用到)
 3. NonVPNcsv-03
-### Tunneled http traffic:
+### Tunneled http traffic 的資料夾:
 1. VPNcsv-01
 2. VPN-csv-02
 
