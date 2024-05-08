@@ -7,3 +7,7 @@
   6. 碰到的困難2：335筆flow總共有5560筆packets的pdf要計算，矩陣大小也偏大，導致到目前寫紀錄的現在，執行1小時半都還沒輸出一個成功的output.csv，可能是我最後一段mapping的寫法的問題、或我電腦效能太差，會再修改。(一定要跑出來啊阿阿阿阿)
 
 【5/8 17:21補充】現在的執行速度大概為12秒寫入一筆資料，如果要跑完全部5590筆可能需要18小時，該換電腦了
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/115610077/d1196a61-3784-4c5a-a3f6-4a00397c305c)
+【上圖為計算出的PDF未經過mapping的結果】
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/115610077/99d7aa9f-9c06-43c8-8582-c5b6372ed9b9)
+【上圖為chatgpt改良我的程式後，五秒內完成mapping的csv檔案，但是目前還沒找到與未mapping的output.csv對應到的地方，chatgpt的對應法待研究】
