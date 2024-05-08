@@ -13,3 +13,4 @@
 【上圖為chatgpt改良我的程式後，五秒內完成mapping的csv檔案，但是目前還沒找到與未mapping的output.csv對應到的地方，chatgpt的對應法待研究】
 
 【5/8 18:34補充】因為我也不確定哪一個PDF算法才是對的，所以先丟了matrix.zip上來，這是由gpt幫我mapping的檔案，大家可以先試試看，如果有不合理的地方我再更正
+(self reminder)：自己的code放github，gpt的code在anaconda
