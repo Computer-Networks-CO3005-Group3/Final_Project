@@ -14,4 +14,4 @@
 
 【5/8 18:34補充】因為我也不確定哪一個PDF算法才是對的，所以先丟了matrix.zip上來，這是由gpt幫我mapping的檔案，大家可以先試試看，如果有不合理的地方我再更正
 
-(self reminder)：自己的code放github，gpt的code在anaconda
+(self reminder)：承誼的code在fingerprint，自己的code放fingerprint2，gpt的code在fingerprint3(目前fingerprint的來源)
