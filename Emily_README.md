@@ -47,7 +47,17 @@
 3.  #### 計算待測F的Sn
 4.  #### 判斷待測F為regular http traffic或tunneling http traffic，將(src_ip, dest_ip,  original_class, z_n, s_n,  new_class)依次存入csv檔中，並且每個檔案中為i相同的多個flow。
 
-![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/224235.png)
+![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/224235.png)    
 
+| 類型                   | 可用流量 | 最大封包大小 | 最小封包大小 | 最大時間差            | 最小時間差               | 映射範圍            |
+|-----------------------|---------|--------------|--------------|------------------------|---------------------------|---------------------|
+| Regular HTTP Traffic  | 396     | 30668        | 60           | 4609.973249912262      | 9.5367431640625e-07      | pkt_size: 40~31000  |
+|                        |         |              |              |                        |                           | time_diff: 10^(-8)~10^(05) |
+| Tunneling HTTP Traffic| 83      | 1360         | 45           | 2806.099632024765      | 1.6927719116210938e-05   | pkt_size: 40~31000  |
+|                        |         |              |              |                        |                           | time_diff: 10^(-8)~10^(05) |
+
+ 
+#### Testing_Data = NonVPNcsv-03   
+#### Training_Data = NonVPNcsv-01 + NonVPNcsv-02 + VPNcsv-01 + VPNcsv-02   
     
 ##### 2024/05/08 更新   
