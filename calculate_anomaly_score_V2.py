@@ -10,13 +10,13 @@ def get_Z_sequence(F, pdf_vector):
         # find z_i
         row = s_i - 40
         col=int((np.round((np.log10(t_i)),decimals=2)-(-8))/0.01)
-        Zi = pdf_vector[row-1][col-1]
+        Zi = pdf_vector[row][col]
         Z_sequence.append(Zi)
         
 
     return Z_sequence
 
-def calculate_anomaly_score(z_sequence, l_pdf, l_f, epsilon=1e-55):
+def calculate_anomaly_score(z_sequence, l_pdf, l_f, epsilon=1e-165):
     # Zi to Ai
     a_sequence = [1 / (z) if z > 0 else 1 / epsilon for z in z_sequence]
     # Amin Amax N_sects
@@ -52,7 +52,8 @@ def classify_traffic(s_n, T=1):
     return new_class
 
 def process_csv_files(input_directory, pdf_file_path, output_directory):
-    pdf_vector = read_pdf_matrix_2(pdf_file_path)
+    ###
+    pdf_vector = read_pdf_matrix_1(pdf_file_path)
     #print("Matrix的形狀:", pdf_vector.shape)
 
     for filename in tqdm(os.listdir(input_directory)):
@@ -85,10 +86,10 @@ def process_csv_files(input_directory, pdf_file_path, output_directory):
                         writer.writerow({'src_ip': src_ip, 'dest_ip': dest_ip, 'original_class': original_class, 'z_n': z_sequence[i], 's_n': s_n, 'new_class': new_class})
 
 # TEST
-input_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Training_Data/'
-#input_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Testing_Data/'
-output_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Anomaly_Score/'
-pdf_file_path = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/pdf_matrix.npz'
-#pdf_file_path = "D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/matrix/matrix.csv"
+#input_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/Training_Data/'
+input_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/Testing_Data/'
+output_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/Anomaly_Score/'
+#pdf_file_path = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/pdf_matrix.npz'
+pdf_file_path = "D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/matrix/matrix.csv"
 
 process_csv_files(input_directory, pdf_file_path, output_directory)
