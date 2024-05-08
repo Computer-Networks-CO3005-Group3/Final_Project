@@ -21,7 +21,7 @@
 ![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/005710.png)   
 ![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/005541.png)   
 ![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/005630.png)   
-![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/005759.png)   
+![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/224018.png)   
    
 ##### 2024/05/04 更新   
    
@@ -46,6 +46,8 @@
 2.  #### 計算待測F的Zi
 3.  #### 計算待測F的Sn
 4.  #### 判斷待測F為regular http traffic或tunneling http traffic，將(src_ip, dest_ip,  original_class, z_n, s_n,  new_class)依次存入csv檔中，並且每個檔案中為i相同的多個flow。
+
+![圖片](https://github.com/emilytsao168/Computer_Networks_Final_Project/blob/main/224235.png)
 
     
 ##### 2024/05/08 更新   
