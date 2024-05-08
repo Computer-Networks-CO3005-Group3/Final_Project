@@ -1,0 +1,6 @@
+src_ip,dest_ip,pkt_size,time_diff,original_class
+173.194.123.70,10.8.0.10,833,1.8551380634307861,tunneling http traffic
+173.194.123.70,10.8.0.10,833,0.4249730110168457,tunneling http traffic
+173.194.123.70,10.8.0.10,833,0.19774389266967773,tunneling http traffic
+173.194.123.70,10.8.0.10,833,0.7719550132751465,tunneling http traffic
+173.194.123.70,10.8.0.10,833,0.4699370861053467,tunneling http traffic

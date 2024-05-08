@@ -1,0 +1,2 @@
+src_ip,dest_ip,pkt_size,time_diff,original_class
+173.194.123.121,10.8.0.10,1135,0.06212902069091797,tunneling http traffic
