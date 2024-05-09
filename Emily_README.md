@@ -61,7 +61,7 @@
 | 映射後           | 0~30960  | 0~1300 |
    
 
-#### Testing_Data = NonVPNcsv-03(335)   
-#### Training_Data = NonVPNcsv-01(18) + NonVPNcsv-02(43) + VPNcsv-01(46) + VPNcsv-02(34)   
+#### Training_Data = NonVPNcsv-03(335)   
+#### Testing_Data = NonVPNcsv-01(18) + NonVPNcsv-02(43) + VPNcsv-01(46) + VPNcsv-02(34)   
     
 ##### 2024/05/08 更新   
