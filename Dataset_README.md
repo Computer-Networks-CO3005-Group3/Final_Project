@@ -1,4 +1,10 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
+## 5/10 data補充! Open HTTPS Dataset_chrome_folder(**全部都是 regular traffic**)
+這個 dataset 總共有 10 天的紀錄，分為 chrome 和 firefox 的 traffic 紀錄，目前是只採用chrome的。
+檔名如果有"_o"是正常的，生成csv的時候方便識別而已~沒有差異或錯誤!
+我負責12345、10(完成)；筱婷負責6789、11、12。
+NonTor 的 dataset 也正在下載中有 8.8G 的 data。
+
 ## 5/10 更新抓data的方式
 有鑑於之前直接用python執行所有動作(濾出 http traffic 再計算同 flow 的時間差)太耗費時間，因此做了一些調整:
 1. 用 wireshark 內建的 tshark 直接以指令濾出.pcap檔中的 http 流量，輸出一個csv檔(時間的部分就是直接紀錄封包的時間戳)
