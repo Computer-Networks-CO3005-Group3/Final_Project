@@ -13,7 +13,7 @@ cd C:\Program Files\Wireshark
 
 tshark -r C:\Users\User\Desktop\Google-Chrome(Day5).pcap -Y http -T fields -e ip.src -e ip.dst -e frame.len -e frame.time_relative -E header=n -E separator=, -E quote=n -E occurrence=f > C:\Users\User\Desktop\tsharkcsv_folder\Google-Chrome(Day5).csv
 ```
-完成後在去python執行算時差(cal_timediff_v1.py)應該就可以拿到跟原本程序相同格式且正確的csv檔案。
+完成後在去python執行算時差(cal_timediff_v1.py，注意一下第29以及31行的路徑設定)應該就可以拿到跟原本程序相同格式且正確的csv檔案。
 
 Q:
 應該是原本的方法比較準 但不影響吧? 在有限的時間的精確度要到幾位呢?這個誤差是可以接受的嗎?
