@@ -23,6 +23,7 @@ class PcapAnalyzer:
         # Open the pcap file
         cap = pyshark.FileCapture(filepath)
         count = 1
+        count_no_http = 1
         # Initialize the query table
         query_table = defaultdict(list)
         print("[analyzing]", filename)
@@ -57,6 +58,10 @@ class PcapAnalyzer:
 
                 self.http_packets.append(http_packet)
                 count += 1
+            else:
+                if count_no_http % 1000 == 0:
+                    print("{" + str(count_no_http) + "}", end=" ")
+                count_no_http+=1
         print("\n")
         print("[analyze end]", filename)
         self.save_to_csv(self.http_packets, filename)
@@ -83,7 +88,7 @@ class PcapAnalyzer:
 
 # Usage
 # folder_path = 'C:/Users/User/Desktop/Testpcap_folder'
-folder_path = 'C:/Users/User/Desktop/NonVPN-PCAPs-01'
+folder_path = 'C:/Users/User/Desktop/open_https_dataset'
 analyzer = PcapAnalyzer(folder_path)
 analyzer.analyze_pcap_files()
 
