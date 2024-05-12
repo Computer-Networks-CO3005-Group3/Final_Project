@@ -1,4 +1,29 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
+## 5/10 data補充! Open HTTPS Dataset_chrome_folder(**全部都是 regular traffic**)
+這個 dataset 總共有 10 天的紀錄，分為 chrome 和 firefox 的 traffic 紀錄，目前是只採用chrome的。
+檔名如果有"_o"是正常的，生成csv的時候方便識別而已~沒有差異或錯誤!
+我負責12345、10(完成)；筱婷負責6789、11、12。
+NonTor 的 dataset 也正在下載中有 8.8G 的 data。
+
+## 5/10 更新抓data的方式
+有鑑於之前直接用python執行所有動作(濾出 http traffic 再計算同 flow 的時間差)太耗費時間，因此做了一些調整:
+1. 用 wireshark 內建的 tshark 直接以指令濾出.pcap檔中的 http 流量，輸出一個csv檔(時間的部分就是直接紀錄封包的時間戳)
+2. 將 tshark 生成的.csv檔丟入 python 內計算同 flow 的時差
+(以前的方法花半天，現在5分鐘可以搞定?)差不多
+將同一個.pcap檔案經過原本的程序(左圖)、以及新程序(右圖)的差異比較:
+![驗證通過](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/b9bbd25d-dd2b-4b08-9e09-b3b693a3304c)
+內容和數量都沒有問題，只不過時間的計算上好像會有一點誤差。
+以管理員執行cmd然後依序執行底下的命令(資料夾及檔名替換一下):
+```
+cd C:\Program Files\Wireshark
+
+tshark -r C:\Users\User\Desktop\Google-Chrome(Day5).pcap -Y http -T fields -e ip.src -e ip.dst -e frame.len -e frame.time_relative -E header=n -E separator=, -E quote=n -E occurrence=f > C:\Users\User\Desktop\tsharkcsv_folder\Google-Chrome(Day5).csv
+```
+完成後在去python執行算時差(cal_timediff_v1.py，注意一下第29以及31行的路徑設定)應該就可以拿到跟原本程序相同格式且正確的csv檔案。
+
+Q:
+應該是原本的方法比較準 但不影響吧? 在有限的時間的精確度要到幾位呢?這個誤差是可以接受的嗎?
+
 
 ## 5/7 dataset 抓取完畢
 ### Regular http traffic 的資料夾:
