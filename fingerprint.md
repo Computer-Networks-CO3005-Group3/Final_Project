@@ -2,6 +2,7 @@
   1. 由小資料確認pdf計算的對錯
   2. 高斯濾波器的sigma數值給標準差
   3. 找pdf的最小值給維蓉
+     
 5/8 進度
   1. 設計流程1：先跑Emily的to_flow.py，利用calculate_mean_var計算size、time的平均值與標準差。
   2. 設計流程2：pdf_genration，利用剛剛算出來的平均值與標準差算出pdf，並把他輸出到output.csv中。
