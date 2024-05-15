@@ -4,6 +4,13 @@
 
 裡面有篇paper "Investigating Traffic Analysis Attacks on Apple iCloud Private Relay" 裡面提到他們蒐集的data有包含safari的網頁瀏覽。
 
+目前在資料匣裡看到的.csv檔案都是從 "There" 目錄裡面的.csv抓出來的，我發現其他地方的.csv幾乎沒有 HTTP traffic。
+
+資料夾的目錄圖:
+
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/3efb109e-b2fb-4e50-beec-3478c18b87df)
+
+
 這邊是paper(連結: https://dl.acm.org/doi/10.1145/3579856.3595793 )內原文的截圖:
 
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/cdd67274-52b8-4b56-a7c1-cc8943e44df6)
