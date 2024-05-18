@@ -1,3 +1,7 @@
+5/18 
+pdf的總和大約為1，所以感覺pdf計算沒有錯..吧
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/168053836/da8973a1-b06c-467e-b863-9e679e6a18db)
+
 5/13 需要改善的地方
   1. 由小資料確認pdf計算的對錯
   2. 高斯濾波器的sigma數值給標準差
