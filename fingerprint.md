@@ -1,4 +1,5 @@
-5/18 
+5/18 執行須先install scipy
+濾波器的sigma直接設1.0
 pdf的總和大約為1，所以感覺pdf計算沒有錯..吧
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/168053836/da8973a1-b06c-467e-b863-9e679e6a18db)
 
