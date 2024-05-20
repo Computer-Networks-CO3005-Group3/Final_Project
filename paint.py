@@ -4,15 +4,6 @@ import csv
 import os
 import pandas as pd
 
-
-#regular http traffic
-#tunneling http traffic
-
-#plt.rcParams['font.sans-serif']=['Arial']  #如果要显示中文字体，则在此处设为：SimHei
-#plt.rcParams['axes.unicode_minus']=False  #显示负号
-
-
-
 #folder_path = 'D:\Anomaly_Score'  # 請替換為你的資料夾路徑
 
 def compare_classes(original_class, new_class):
