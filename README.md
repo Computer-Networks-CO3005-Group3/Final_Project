@@ -6,7 +6,7 @@
 >### 工作進度計畫:
 >
 >#### data 組:
->- 確認承誼找到的 MACCDC dataset 可以用
+>- 確認承誼找到的 MACCDC dataset 可以用 PS.我剛剛看了一下，我們好像沒有辦法確定這個 trace 裡到底哪些是 regular http；哪些不是。不過也還好 我會先抓一些，如果真的要用 就手動把一些我們覺得很像 tunneled 特徵的 pkt 拿掉(maybe like size 偏大的 pkt)，剩下的 pkt 我們就當 regular 去用。
 >- 把他抓下來 (deadline: 禮拜五5/24晚上)
 >- 初版簡報生出來 (deadline: 禮拜五5/24晚上)
 >
