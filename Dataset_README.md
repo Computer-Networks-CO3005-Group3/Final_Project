@@ -1,4 +1,16 @@
 # Dataset的成果紀錄以及進度說明(由新到舊)
+
+## 5/20 整理一下目前有找到並可用的 dataset (folder)
+- samsung
+- Dataset_tcpreplay_big_and_small
+- Open HTTPS Dataset_Firefox
+- Open HTTPS Dataset_chrome_folder
+- NonVPNcsv-01
+- NonVPNcsv-02
+- NonVPNcsv-03
+- VPN-csv-02
+- VPNcsv-01
+
 ## 5/10 data補充! Open HTTPS Dataset_chrome_folder(**全部都是 regular traffic**)
 這個 dataset 總共有 10 天的紀錄，分為 chrome 和 firefox 的 traffic 紀錄，目前是只採用chrome的。
 檔名如果有"_o"是正常的，生成csv的時候方便識別而已~沒有差異或錯誤!
