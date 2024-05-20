@@ -88,8 +88,8 @@ def process_csv_files(input_directory, pdf_file_path, output_directory):
                         writer.writerow({'src_ip': src_ip, 'dest_ip': dest_ip, 'original_class': original_class, 'z_n': z_sequence[i], 's_n': s_n, 'new_class': new_class})
             
     min_n_sects = min(n_sects_list)
-    print(n_sects_list)
-    print(min_n_sects)
+    #print(n_sects_list)
+    #print(min_n_sects)
 
 # TEST
 #input_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/Training_Data/'
