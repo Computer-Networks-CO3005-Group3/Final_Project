@@ -1,0 +1,4 @@
+src_ip,dest_ip,pkt_size,time_diff,original_class
+66.201.189.60,202.11.82.89,219,103.15683099999998,regular http traffic
+66.201.189.60,202.11.82.89,219,1.0814409999999839,regular http traffic
+66.201.189.60,202.11.82.89,229,0.20468800000003284,regular http traffic

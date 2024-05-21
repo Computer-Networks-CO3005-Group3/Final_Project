@@ -1,0 +1,2 @@
+src_ip,dest_ip,pkt_size,time_diff,original_class
+172.16.133.40,204.93.223.146,544,116.03724199999999,regular http traffic

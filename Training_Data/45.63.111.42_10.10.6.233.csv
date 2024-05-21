@@ -1,0 +1,5 @@
+src_ip,dest_ip,pkt_size,time_diff,original_class
+45.63.111.42,10.10.6.233,69,0.13214799999968818,regular http traffic
+45.63.111.42,10.10.6.233,69,0.13838599999962753,regular http traffic
+45.63.111.42,10.10.6.233,69,0.13885800000025483,regular http traffic
+45.63.111.42,10.10.6.233,69,0.14125500000045577,regular http traffic
