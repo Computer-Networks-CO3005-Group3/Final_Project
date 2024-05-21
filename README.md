@@ -3,6 +3,8 @@
 
 >## 5/20 會議記錄
 >
+> 共編簡報:https://docs.google.com/presentation/d/1xW0g74baKMOSCpuagSwAkiRFRNa6VYQz/edit?usp=sharing&ouid=110904508139372047303&rtpof=true&sd=true
+>
 >### 工作進度計畫:
 >
 >#### data 組:
