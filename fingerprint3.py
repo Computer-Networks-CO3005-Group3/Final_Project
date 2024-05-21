@@ -1,6 +1,9 @@
 import numpy as np
 import os
 import csv
+from scipy.stats import multivariate_normal
+from scipy.ndimage import gaussian_filter
+# import matplotlib.pyplot as plt
 
 def calculate_mean_var(filepath):
     # 初始化統計量
@@ -53,21 +56,56 @@ def pdf_generation(filepath, mean_size, mean_time, var_size, var_time):
                 for row in reader:
                     size = int(row[2])
                     time = float(row[3])
+                    if time <= 0:
+                        continue
                     pdf_value = mv_normal.pdf([size, time])
                     # 將映射後的值寫入矩陣中
                     mapped_size = size - 40
                     mapped_time = int((np.round((np.log10(time)),decimals=2)-(-8))/0.01)
                     matrix[mapped_size, mapped_time] = pdf_value
     
+    # 對PDF矩陣應用二維高斯濾波器
+    sigma = 0.2  # 高斯核的標準差,可根據需要調整
+    filtered_matrix = gaussian_filter(matrix, sigma, mode='constant')
+
+    # 確保濾波後的矩陣依然符合PDF性質(所有元素和為1)
+    filtered_matrix /= filtered_matrix.sum()
+
+
+    min_nonzero_value = np.min(filtered_matrix[np.nonzero(filtered_matrix)])
+    #min_nonzero_value = np.min(matrix[np.nonzero(matrix)])
+    print(f"PDF矩陣中非零的最小值為: {min_nonzero_value}")
+
     # 寫入CSV檔案
-    output_file_path = 'C:/Users/APPLE/Desktop/Final_Project/matrix.csv'
+    output_file_path = 'C:/Users/張/Desktop/Final_Project-main/matrix.csv'
     with open(output_file_path, 'w') as file:
         for row in matrix:
             row_str = ','.join(map(str, row))
             file.write(row_str + '\n')
+
+
+    print(f"濾波前PDF矩陣元素範圍: {matrix.min()} - {matrix.max()}")
+    print(f"濾波前PDF矩陣元素總和: {matrix.sum()}")
+
+    print(f"濾波後PDF矩陣元素範圍: {filtered_matrix.min()} - {filtered_matrix.max()}")
+    print(f"濾波後PDF矩陣元素總和: {filtered_matrix.sum()}")
+
+    # # 繪製濾波前PDF矩陣
+    # plt.figure()
+    # plt.imshow(matrix, cmap='hot')
+    # plt.colorbar()
+    # plt.title('Unfiltered PDF Matrix')
+    # plt.show()
+
+    # # 繪製濾波後PDF矩陣 
+    # plt.figure()
+    # plt.imshow(filtered_matrix, cmap='hot')
+    # plt.colorbar()
+    # plt.title('Filtered PDF Matrix')
+    # plt.show()
     
     print("機率密度函數值矩陣已寫入CSV檔案:", output_file_path)
 
-filepath = 'C:/Users/APPLE/Desktop/Final_Project/TEST_NonVPNcsv-03/'
+filepath = 'C:/Users/張\Desktop/Final_Project-main/Training_Data'
 mean_size, mean_time, var_size, var_time = calculate_mean_var(filepath)
 pdf_generation(filepath, mean_size, mean_time, var_size, var_time)
