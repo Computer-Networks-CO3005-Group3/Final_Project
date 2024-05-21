@@ -5,7 +5,8 @@
 https://drive.google.com/drive/folders/11VgpYuAK4C-z_-oAhjSR6U66rPh5gFtH?usp=sharing
 
 #### 說明:
-- 提供 2010 年捕獲的網路封包，不確定是何處何地捕獲的，也不知道封包的特性(regular or not)
+- 總共有27個pcap，編號從00~26
+- 提供 2010 年(其實還有11、12年的)捕獲的網路封包，不確定是何處何地捕獲的，也不知道封包的特性(regular or not)
 - 目前看起來 http 的封包特性是有像論文說的那樣 (size:40~1500)
 
 
