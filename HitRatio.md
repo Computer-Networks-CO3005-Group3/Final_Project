@@ -8,9 +8,4 @@
 ![螢幕擷取畫面 2024-05-20 225857](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/d337e74f-714f-4678-9b77-9fa89fbe0c0e)
 ![螢幕擷取畫面 2024-05-20 225919](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/f80c39c7-afcb-4fbc-bf54-7fab4151ad51)
 
-![image](https://github.com/helloiamhandsome/TEST/blob/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-05-20%20225807.jpg)
-![image](https://github.com/helloiamhandsome/TEST/blob/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-05-20%20225831.jpg)
-![image](https://github.com/helloiamhandsome/TEST/blob/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-05-20%20225857.jpg)
-![image](https://github.com/helloiamhandsome/TEST/blob/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-05-20%20225919.jpg)
-
 ##### 2024/5/20
