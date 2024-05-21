@@ -1,4 +1,4 @@
-5/20 沉澱之後再出發
+#5/20 沉澱之後再出發
   1. 承誼、翎喬兩邊統合了想法！目前確認使用fingerprint3.py讀程式碼沒問題，沒有bug，也有先跑了toflow.py，此次使用的dataset是除了nonvpn1、nonvpn2以外的所有資料。
   2. 與維蓉這邊也進行了串聯，與先前翎喬計算出的fingerprint正確率50%比起來，這次的正確率為57%，有些微提升。
   3. 發現有無濾波的正確率都一樣，更改濾波器的sigma值，正確率依然不變，可見我們現在的濾波器沒用。
@@ -6,17 +6,17 @@
      ![436307417_820592286139327_7926448739171119703_n](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/115610077/9739c5c9-f64b-4b43-be27-e8e782e1db52)
   5. 本周的目標：讓PDF的總和在通過濾波器之前為1
 
-5/18 執行須先install scipy
+#5/18 執行須先install scipy
 濾波器的sigma直接設1.0
 pdf的總和大約為1，所以感覺pdf計算沒有錯..吧
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/168053836/da8973a1-b06c-467e-b863-9e679e6a18db)
 
-5/13 需要改善的地方
+#5/13 需要改善的地方
   1. 由小資料確認pdf計算的對錯
   2. 高斯濾波器的sigma數值給標準差
   3. 找pdf的最小值給維蓉
      
-5/8 進度
+#5/8 進度
   1. 設計流程1：先跑Emily的to_flow.py，利用calculate_mean_var計算size、time的平均值與標準差。
   2. 設計流程2：pdf_genration，利用剛剛算出來的平均值與標準差算出pdf，並把他輸出到output.csv中。
   3. 設計流程3：把time、size做mapping，讓data可以寫進大小為30961*1301的表格中：(round(log10(time))-(-8))/0.01、size-40，並繪製出下一階段要用的matrix.csv
