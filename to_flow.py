@@ -66,10 +66,11 @@ def process_traffic_data(input_file, output_file, original_class):
     print(f"Min time_diff: {min_time_diff}")
 
 # TEST
-input_filepath = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/VPN-csv-02/'
-output_filepath = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/TEST_VPNcsv-02/'
+input_filepath = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/VPNcsv-01/'
+output_filepath = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/Testing_Data/'
 
-process_traffic_data(input_filepath, output_filepath, 'regular http traffic')
+process_traffic_data(input_filepath, output_filepath, 'tunneling http trafficc')
+#(例: regular http traffic 或 tunneling http traffic)
 
 output_file_count = count_output_files(output_filepath)
 print(f"Total output CSV files: {output_file_count}")

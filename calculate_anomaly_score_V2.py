@@ -8,15 +8,17 @@ def get_Z_sequence(F, pdf_vector):
     for i, packet in enumerate(F, start=1):
         s_i, t_i = packet
         # find z_i
-        row = s_i - 40
-        col=int((np.round((np.log10(t_i)),decimals=2)-(-8))/0.01)
+        #row = s_i - 40
+        #col=int((np.round((np.log10(t_i)),decimals=2)-(-8))/0.01)
+        row = round((s_i-40)*500/30960)
+        col = int((np.round((np.log10(t_i)),decimals=2)-(-8))/0.01*500/1300)
         Zi = pdf_vector[row][col]
         Z_sequence.append(Zi)
         
 
     return Z_sequence
 
-def calculate_anomaly_score(z_sequence, l_pdf, l_f, epsilon=1e-156):###
+def calculate_anomaly_score(z_sequence, l_pdf, l_f, epsilon=1e-100):###
     # Zi to Ai
     a_sequence = [1 / (z) if z > 0 else 1 / epsilon for z in z_sequence]
     # Amin Amax N_sects
@@ -94,8 +96,8 @@ def process_csv_files(input_directory, pdf_file_path, output_directory):
 # TEST
 #input_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/Training_Data/'
 input_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/Testing_Data/'
-output_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Anomaly_Score3/'
+output_directory = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/Anomaly_Score4/'
 #pdf_file_path = 'D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/pdf_matrix.npz'
-pdf_file_path = "D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/matrix_3.csv"
+pdf_file_path = "D:/EMILY/emily/ncu/112-2/CO3005/Computer_Networks_Final_Project/Final_Project/matrix_3.csv"
 
 process_csv_files(input_directory, pdf_file_path, output_directory)

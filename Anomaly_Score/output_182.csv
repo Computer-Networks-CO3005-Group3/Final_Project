@@ -1,15 +1,11 @@
 src_ip,dest_ip,original_class,z_n,s_n,new_class
-10.8.8.130,207.241.227.188,tunneling http traffic,0.0,179.0,tunneling http traffic
-10.8.8.130,207.241.236.176,tunneling http traffic,0.0,179.0,tunneling http traffic
-10.8.8.138,185.2.220.137,tunneling http traffic,0.0,180.0,tunneling http traffic
-10.8.8.138,24.156.130.203,tunneling http traffic,0.0,180.0,tunneling http traffic
-108.175.43.146,131.202.240.150,regular http traffic,0.0,181.0,tunneling http traffic
-108.175.43.161,131.202.240.150,regular http traffic,0.0,180.0,tunneling http traffic
-131.202.240.150,108.175.43.146,regular http traffic,0.0,181.0,tunneling http traffic
-131.202.240.150,108.175.43.161,regular http traffic,0.0,181.0,tunneling http traffic
-185.2.220.137,10.8.8.138,tunneling http traffic,0.0,181.0,tunneling http traffic
-207.241.227.212,10.8.8.130,tunneling http traffic,0.0,180.0,tunneling http traffic
-207.241.227.82,10.8.8.130,tunneling http traffic,0.0,181.0,tunneling http traffic
-207.241.228.122,10.8.8.130,tunneling http traffic,0.0,181.0,tunneling http traffic
-207.241.236.176,10.8.8.130,tunneling http traffic,0.0,181.0,tunneling http traffic
-207.241.237.128,10.8.8.130,tunneling http traffic,0.0,181.0,tunneling http traffic
+10.8.8.130,207.241.227.188,tunneling http trafficc,8.874369554444749e-05,2.0429074584628855e-94,regular http traffic
+10.8.8.130,207.241.236.176,tunneling http trafficc,8.007551786909558e-05,2.365421240937677e-94,regular http traffic
+10.8.8.138,185.2.220.137,tunneling http trafficc,0.00017529727348168731,1.0412884535013281e-94,regular http traffic
+10.8.8.138,24.156.130.203,tunneling http trafficc,0.00012209203188733473,2.2478105360892521e-94,regular http traffic
+185.2.220.137,10.8.8.138,tunneling http trafficc,0.0001108187906353773,1.7201509790628083e-94,regular http traffic
+207.241.227.212,10.8.8.130,tunneling http trafficc,7.286766135280609e-05,2.3951741322712572e-94,regular http traffic
+207.241.227.82,10.8.8.130,tunneling http trafficc,6.550910813557974e-05,2.4625035012592404e-94,regular http traffic
+207.241.228.122,10.8.8.130,tunneling http trafficc,6.550910870352287e-05,2.537709765857349e-94,regular http traffic
+207.241.236.176,10.8.8.130,tunneling http trafficc,6.550910813557974e-05,2.607413368128895e-94,regular http traffic
+207.241.237.128,10.8.8.130,tunneling http trafficc,6.836482474921314e-05,2.2763543839616307e-94,regular http traffic

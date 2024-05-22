@@ -1,8 +1,0 @@
-src_ip,dest_ip,original_class,z_n,s_n,new_class
-10.8.8.138,185.2.220.137,tunneling http traffic,0.0,415.0,tunneling http traffic
-185.2.220.137,10.8.8.138,tunneling http traffic,0.0,417.0,tunneling http traffic
-207.241.227.212,10.8.8.130,tunneling http traffic,0.0,427.0,tunneling http traffic
-207.241.227.82,10.8.8.130,tunneling http traffic,0.0,429.0,tunneling http traffic
-207.241.228.122,10.8.8.130,tunneling http traffic,0.0,424.0,tunneling http traffic
-207.241.236.176,10.8.8.130,tunneling http traffic,0.0,426.0,tunneling http traffic
-207.241.237.128,10.8.8.130,tunneling http traffic,0.0,422.0,tunneling http traffic

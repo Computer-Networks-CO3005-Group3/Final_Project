@@ -1,14 +1,11 @@
 src_ip,dest_ip,original_class,z_n,s_n,new_class
-10.8.8.130,207.241.227.188,tunneling http traffic,0.0,182.0,tunneling http traffic
-10.8.8.130,207.241.236.176,tunneling http traffic,0.0,182.0,tunneling http traffic
-10.8.8.138,185.2.220.137,tunneling http traffic,0.0,183.0,tunneling http traffic
-10.8.8.138,24.156.130.203,tunneling http traffic,0.0,183.0,tunneling http traffic
-108.175.43.161,131.202.240.150,regular http traffic,0.0,183.0,tunneling http traffic
-131.202.240.150,108.175.43.146,regular http traffic,0.0,184.0,tunneling http traffic
-131.202.240.150,108.175.43.161,regular http traffic,0.0,184.0,tunneling http traffic
-185.2.220.137,10.8.8.138,tunneling http traffic,0.0,184.0,tunneling http traffic
-207.241.227.212,10.8.8.130,tunneling http traffic,0.0,183.0,tunneling http traffic
-207.241.227.82,10.8.8.130,tunneling http traffic,0.0,184.0,tunneling http traffic
-207.241.228.122,10.8.8.130,tunneling http traffic,0.0,184.0,tunneling http traffic
-207.241.236.176,10.8.8.130,tunneling http traffic,0.0,184.0,tunneling http traffic
-207.241.237.128,10.8.8.130,tunneling http traffic,0.0,184.0,tunneling http traffic
+10.8.8.130,207.241.227.188,tunneling http trafficc,8.54961271119025e-05,2.0768461206034272e-94,regular http traffic
+10.8.8.130,207.241.236.176,tunneling http trafficc,7.255246335306988e-05,2.4054854342762074e-94,regular http traffic
+10.8.8.138,185.2.220.137,tunneling http trafficc,0.0001725665219465361,1.058489510822765e-94,regular http traffic
+10.8.8.138,24.156.130.203,tunneling http trafficc,0.00012209203188733473,2.2722342491043543e-94,regular http traffic
+185.2.220.137,10.8.8.138,tunneling http trafficc,9.54638030720148e-05,1.7433665065192959e-94,regular http traffic
+207.241.227.212,10.8.8.130,tunneling http trafficc,7.286766135280609e-05,2.4378832029789113e-94,regular http traffic
+207.241.227.82,10.8.8.130,tunneling http trafficc,7.286766135280609e-05,2.505469077303525e-94,regular http traffic
+207.241.228.122,10.8.8.130,tunneling http trafficc,7.286766135280609e-05,2.5802182015319885e-94,regular http traffic
+207.241.236.176,10.8.8.130,tunneling http trafficc,6.550910813557974e-05,2.6516639828070437e-94,regular http traffic
+207.241.237.128,10.8.8.130,tunneling http trafficc,6.747996994309586e-05,2.314872224519099e-94,regular http traffic

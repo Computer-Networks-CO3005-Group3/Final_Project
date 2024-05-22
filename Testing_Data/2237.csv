@@ -1,0 +1,11 @@
+src_ip,dest_ip,pkt_size,time_diff,original_class
+0,0,1120,9.535924114226605e-07,regular http traffic
+0,0,564,0.03027785183280629,regular http traffic
+0,0,216,220.54235084399713,regular http traffic
+0,0,1076,7.12706365839117e-06,regular http traffic
+0,0,113,28.457910963534673,regular http traffic
+0,0,945,0.0033748053053276736,regular http traffic
+0,0,272,0.20818361102943372,regular http traffic
+0,0,647,3.5581491860585603,regular http traffic
+0,0,1138,0.0011907139819981925,regular http traffic
+0,0,66,3.7770009449883287e-06,regular http traffic
