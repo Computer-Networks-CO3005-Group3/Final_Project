@@ -13,8 +13,15 @@
 **********************************************************************************************************************************
 random generator
 
-  已經可以產生一個20,000筆regular traffic 的packets的pdf，檔案放在regular fingerprint.zip那邊。
-  ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/115610077/8f52ec5e-7090-43cb-a116-a0d2766a878a)
+  產生一個20,000筆regular train traffic 的packets的pdf和一個regular test traffic，檔案放在regular train fingerprint.zip和regular train fingerprint.zip那邊。
+
+  程式碼的部分結合了承誼給的fingerprint3.py與random generate數值的function，我是在jupyter notebook寫，按一下執行就可以有結果了！
+
+  附圖是執行結果與輸出之csv檔案示意圖
+  ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/115610077/11269b5b-21f5-443c-b4aa-5ba55abf6532)
+
+  ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/115610077/f4b4a8c4-42ab-4275-91c6-80d1d669c3da)
+
 
 
 5/20 沉澱之後再出發
