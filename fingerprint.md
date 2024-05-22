@@ -1,4 +1,4 @@
-5/22 fingerprint3.py 程式碼完善
+5/22 fingerprint3.py 程式碼完善 && random data generate
 =====
 1.原先將size及time之間視為獨立;現在更改為計算彼此之間的相關係數  
 2.原先濾波前pdf矩陣元素總和不為1;現在將pdf矩陣進行正規化使其總和為1  
@@ -11,7 +11,7 @@
 將size、time加入相關係數且對matrix進行正規化使pdf總和為1後:
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/168053836/8740d311-dc7c-4fd8-bffd-2a0bae777b64)
 **********************************************************************************************************************************
-random generator
+**random generator
   已經可以產生一個20,000筆regular traffic 的packets的pdf，檔案放在regular fingerprint.zip那邊。
   ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/115610077/8f52ec5e-7090-43cb-a116-a0d2766a878a)
 
