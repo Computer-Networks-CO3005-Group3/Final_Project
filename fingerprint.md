@@ -15,9 +15,9 @@ random generator
 
   產生一個200,000個regular train fingerprint的packets的pdf和一個50,000個regular test data的packets，檔案放在regular train fingerprint.zip和regular test data.csv那邊。
 
-  程式碼的部分1：regular fingerprint generator.py：結合了承誼給的fingerprint3.py與random generate數值的function，我是在jupyter notebook寫，按一下執行就可以有結果了！
+  程式碼的部分1：regular fingerprint generator.py：結合了承誼給的fingerprint3.py與random generate數值的function，我是在jupyter notebook寫，按一下執行就可以有結果了！產生了200,000筆資料給train用
 
-  程式碼的部分2：regular data generator.py：單純產生50,000個data，給train用
+  程式碼的部分2：regular data generator.py：單純產生50,000個data，給test用
 
   附圖是執行結果與輸出之csv檔案示意圖
 
