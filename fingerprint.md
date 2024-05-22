@@ -11,7 +11,8 @@
 將size、time加入相關係數且對matrix進行正規化使pdf總和為1後:
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/168053836/8740d311-dc7c-4fd8-bffd-2a0bae777b64)
 **********************************************************************************************************************************
-**random generator
+random generator
+
   已經可以產生一個20,000筆regular traffic 的packets的pdf，檔案放在regular fingerprint.zip那邊。
   ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/115610077/8f52ec5e-7090-43cb-a116-a0d2766a878a)
 
