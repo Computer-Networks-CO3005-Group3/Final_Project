@@ -13,7 +13,7 @@
 **********************************************************************************************************************************
 random generator
 
-  產生一個20,000筆regular train traffic 的packets的pdf和一個regular test traffic，檔案放在regular train fingerprint.zip和regular train fingerprint.zip那邊。
+  產生一個200,000個regular train traffic 的packets的pdf和一個50,000個regular test traffic的packets，檔案放在regular train fingerprint.zip和regular train fingerprint.zip那邊。
 
   程式碼的部分結合了承誼給的fingerprint3.py與random generate數值的function，我是在jupyter notebook寫，按一下執行就可以有結果了！
 
