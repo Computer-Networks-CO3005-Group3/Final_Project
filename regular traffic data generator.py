@@ -2,6 +2,8 @@ import csv
 import random
 import numpy as np
 from scipy.stats import multivariate_normal
+from IPython.display import FileLink
+from IPython.display import HTML
 
 def generate_data(num_records):
     data = []
@@ -112,3 +114,10 @@ if __name__ == "__main__":
 
     # 生成PDF矩陣並保存到CSV文件
     pdf_generation(input_filename, mean_size, mean_time, var_size, var_time, cov_size_time)
+    
+# 顯示下載鏈接
+FileLink('matrix.csv')
+# 明確指定mime類型為text/csv
+
+# 顯示下載鏈接，強制mime類型
+HTML('<a download="matrix.csv" href="matrix.csv">Download CSV file</a>')
