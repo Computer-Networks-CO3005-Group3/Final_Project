@@ -71,7 +71,7 @@ def pdf_generation(file_path, mean_size, mean_time, var_size, var_time, cov_size
                 continue
             pdf_value = mv_normal.pdf([size, time])
             # 將映射後的值寫入矩陣中
-            mapped_size = round(size-40)*500/30960
+            mapped_size = round((size-40)*500/30960)
             mapped_time = int((np.round((np.log10(time)),decimals=2)-(-8))/0.01*500/1300)
             '''
             mapped_size = size - 40
