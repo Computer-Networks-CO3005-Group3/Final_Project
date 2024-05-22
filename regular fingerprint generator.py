@@ -58,7 +58,7 @@ def pdf_generation(file_path, mean_size, mean_time, var_size, var_time, cov_size
     mv_normal = multivariate_normal(mean=mean, cov=covariance_matrix)
 
     # 創建一個大小為30961x1301的矩陣
-    matrix = np.zeros((30961, 1301))
+    matrix = np.zeros((501, 501))
 
     # 讀取CSV文件並計算機率密度函數值
     with open(file_path, 'r') as file:
