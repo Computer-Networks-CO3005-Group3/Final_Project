@@ -1,3 +1,16 @@
+5/22
+=====
+1.原先將size及time之間視為獨立;現在更改為計算彼此之間的相關係數
+2.原先濾波前pdf矩陣元素總和不為1;現在將pdf矩陣進行正規化使其總和為1
+皆未更改所得值(size、time獨立，pdf總和不為1):
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/168053836/f316db78-6bb7-4422-bb05-b589603cf625)
+
+將size、time考慮彼此相關係數進行計算後(pdf總和不為1):
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/168053836/a82fbb61-f277-4874-9e52-a003bf90b7e1)
+
+將size、time加入相關係數且對matrix進行正規化使pdf總和為1後:
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/168053836/8740d311-dc7c-4fd8-bffd-2a0bae777b64)
+
 5/20 沉澱之後再出發
 =====
   1. 承誼、翎喬兩邊統合了想法！目前確認使用fingerprint3.py讀程式碼沒問題，沒有bug，也有先跑了toflow.py，此次使用的dataset是除了nonvpn1、nonvpn2以外的所有資料。
