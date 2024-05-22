@@ -1,8 +1,8 @@
 5/22
 =====
-1.原先將size及time之間視為獨立;現在更改為計算彼此之間的相關係數
-2.原先濾波前pdf矩陣元素總和不為1;現在將pdf矩陣進行正規化使其總和為1
-皆未更改所得值(size、time獨立，pdf總和不為1):
+1.原先將size及time之間視為獨立;現在更改為計算彼此之間的相關係數  
+2.原先濾波前pdf矩陣元素總和不為1;現在將pdf矩陣進行正規化使其總和為1  
+皆未更改所得值(size、time獨立，pdf總和不為1):  
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/168053836/f316db78-6bb7-4422-bb05-b589603cf625)
 
 將size、time考慮彼此相關係數進行計算後(pdf總和不為1):
