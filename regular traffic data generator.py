@@ -80,18 +80,18 @@ def pdf_generation(file_path, mean_size, mean_time, var_size, var_time, cov_size
     min_nonzero_value = np.min(matrix[np.nonzero(matrix)])
     print(f"PDF矩陣中非零的最小值為: {min_nonzero_value}")
 
-    # 構建列標頭（時間的對數值）
-    time_headers = [f'{i}' for i in range(matrix.shape[1])]
-
     # 寫入CSV檔案
+    #output_file_path = 'matrix.csv'
+    #with open(output_file_path, 'w', newline='') as file:
+        #writer = csv.writer(file)
+        #for row in matrix:
+           # writer.writerow(row)
+        # 寫入CSV檔案
     output_file_path = 'matrix.csv'
-    with open(output_file_path, 'w', newline='') as file:
-        writer = csv.writer(file)
-        # 寫入標頭
-        header = ['Packet Size / Time Index'] + time_headers
-        writer.writerow(header)
-        for i, row in enumerate(matrix):
-            writer.writerow([i] + row.tolist())
+    with open(output_file_path, 'w') as file:
+        for row in matrix:
+            row_str = ','.join(map(str, row))
+            file.write(row_str + '\n')
 
     print(f"PDF矩陣元素範圍: {matrix.min()} - {matrix.max()}")
     print(f"PDF矩陣元素總和: {matrix.sum()}")
@@ -99,7 +99,7 @@ def pdf_generation(file_path, mean_size, mean_time, var_size, var_time, cov_size
     print("機率密度函數值矩陣已寫入CSV檔案:", output_file_path)
 
 if __name__ == "__main__":
-    num_records = 50000 #200000
+    num_records = 200000  # 修改這裡以生成 5000 筆資料
     input_filename = 'packet_data.csv'
 
     # 生成數據並保存到CSV文件
