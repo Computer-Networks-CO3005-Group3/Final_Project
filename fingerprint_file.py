@@ -1,23 +1,7 @@
-import csv
-import random
 import numpy as np
+import csv
 from scipy.stats import multivariate_normal
-from IPython.display import FileLink
-from IPython.display import HTML
-
-def generate_data(num_records):
-    data = []
-    for _ in range(num_records):
-        packet_size = random.randint(40, 1500)
-        time_interval = 10**(random.uniform(-7, 3))
-        data.append((packet_size, time_interval))
-    return data
-
-def save_to_csv(data, filename):
-    with open(filename, mode='w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow(['Packet Size', 'Time Interval'])  # 包含標頭
-        writer.writerows(data)
+from scipy.ndimage import gaussian_filter
 
 def calculate_mean_var(file_path):
     # 初始化統計量
@@ -31,7 +15,7 @@ def calculate_mean_var(file_path):
     # 讀取CSV文件並計算統計量
     with open(file_path, 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # 跳過標頭
+        next(reader)  
         for row in reader:
             size = int(row[0])
             time = float(row[1])
@@ -63,7 +47,7 @@ def pdf_generation(file_path, mean_size, mean_time, var_size, var_time, cov_size
     # 讀取CSV文件並計算機率密度函數值
     with open(file_path, 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # 跳過標頭
+        next(reader)  
         for row in reader:
             size = int(row[0])
             time = float(row[1])
@@ -73,55 +57,40 @@ def pdf_generation(file_path, mean_size, mean_time, var_size, var_time, cov_size
             # 將映射後的值寫入矩陣中
             mapped_size = round((size-40)*500/30960)
             mapped_time = int((np.round((np.log10(time)),decimals=2)-(-8))/0.01*500/1300)
-            '''
-            mapped_size = size - 40
-            mapped_time = int(np.log10(time) * 100 + 700)
-            '''
-            if 0 <= mapped_size < matrix.shape[0] and 0 <= mapped_time < matrix.shape[1]:
-                matrix[mapped_size, mapped_time] = pdf_value
+            matrix[mapped_size, mapped_time] = pdf_value
 
     # 對PDF矩陣進行歸一化
     matrix /= matrix.sum()
+
+    # 對PDF矩陣應用二維高斯濾波器
+    # sigma = 0.2 # 高斯核的標準差,可根據需要調整
+    # filtered_matrix = gaussian_filter(matrix, sigma, mode='constant')
+    # 確保濾波後的矩陣依然符合PDF性質(所有元素和為1)
+    # filtered_matrix /= filtered_matrix.sum()
 
     min_nonzero_value = np.min(matrix[np.nonzero(matrix)])
     print(f"PDF矩陣中非零的最小值為: {min_nonzero_value}")
 
     # 寫入CSV檔案
-    #output_file_path = 'matrix.csv'
-    #with open(output_file_path, 'w', newline='') as file:
-        #writer = csv.writer(file)
-        #for row in matrix:
-           # writer.writerow(row)
-        # 寫入CSV檔案
-    output_file_path = 'matrix.csv'
+    output_file_path = 'C:/Users/張/Desktop/Final_Project-main/matrix.csv'
     with open(output_file_path, 'w') as file:
         for row in matrix:
             row_str = ','.join(map(str, row))
             file.write(row_str + '\n')
 
-    print(f"PDF矩陣元素範圍: {matrix.min()} - {matrix.max()}")
-    print(f"PDF矩陣元素總和: {matrix.sum()}")
+    print(f"濾波前PDF矩陣元素範圍: {matrix.min()} - {matrix.max()}")
+    print(f"濾波前PDF矩陣元素總和: {matrix.sum()}")
+
+    # 繪製濾波前PDF矩陣
+    # plt.figure()
+    # plt.imshow(matrix, cmap='hot')
+    # plt.colorbar()
+    # plt.title('Unfiltered PDF Matrix')
+    # plt.show()
 
     print("機率密度函數值矩陣已寫入CSV檔案:", output_file_path)
 
-if __name__ == "__main__":
-    num_records = 200000  # 修改這裡以生成 5000 筆資料
-    input_filename = 'packet_data.csv'
-
-    # 生成數據並保存到CSV文件
-    data = generate_data(num_records)
-    save_to_csv(data, input_filename)
-    print(f"Generated {num_records} records and saved to {input_filename}")
-
-    # 計算平均值和方差
-    mean_size, mean_time, var_size, var_time, cov_size_time = calculate_mean_var(input_filename)
-
-    # 生成PDF矩陣並保存到CSV文件
-    pdf_generation(input_filename, mean_size, mean_time, var_size, var_time, cov_size_time)
-    
-# 顯示下載鏈接
-FileLink('matrix.csv')
-# 明確指定mime類型為text/csv
-
-# 顯示下載鏈接，強制mime類型
-HTML('<a download="matrix.csv" href="matrix.csv">Download CSV file</a>')
+# 設置要讀取的單一CSV文件路徑
+file_path = 'C:/Users/張/Desktop/final_project/packet_data.csv'
+mean_size, mean_time, var_size, var_time, cov_size_time = calculate_mean_var(file_path)
+pdf_generation(file_path, mean_size, mean_time, var_size, var_time, cov_size_time)
