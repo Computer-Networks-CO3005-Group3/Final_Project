@@ -26,3 +26,10 @@
 ##### 至於N_sects上升，Hit ratio上升的原因，推測可能是因為package有足夠多的flow很少，導致Hit ratio會產生上升的假象。
 
 ##### 2024/5/22 21:20
+
+### Anomaly_Score5成果
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/aa34c12f-562c-42b2-9a73-ee3dd35ef9e5)
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/1469732c-1f76-4be3-b031-daca1a9ff241)
+##### 目前N=2時的Hit ratio已經上升到0.978
+
+##### 2024/5/24 21:30
