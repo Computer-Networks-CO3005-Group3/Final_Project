@@ -1,0 +1,8 @@
+src_ip,dest_ip,original_class,z_n,s_n,new_class
+10.8.8.138,185.2.220.137,tunneling http trafficc,5.791689963475831e-05,5.30759913350666e-94,regular http traffic
+185.2.220.137,10.8.8.138,tunneling http trafficc,5.7806829415452174e-05,8.561256178757844e-94,regular http traffic
+207.241.227.212,10.8.8.130,tunneling http trafficc,2.158568134386399e-05,1.3135510703602823e-93,regular http traffic
+207.241.227.82,10.8.8.130,tunneling http trafficc,2.1513926836868974e-05,1.329413135336321e-93,regular http traffic
+207.241.228.122,10.8.8.130,tunneling http trafficc,2.216386206458211e-05,1.3406214086929954e-93,regular http traffic
+207.241.236.176,10.8.8.130,tunneling http trafficc,2.2455705272318873e-05,1.3609856569809089e-93,regular http traffic
+207.241.237.128,10.8.8.130,tunneling http trafficc,2.1516180020673094e-05,1.2570312035213058e-93,regular http traffic

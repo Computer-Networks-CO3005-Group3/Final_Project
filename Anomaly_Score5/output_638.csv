@@ -1,0 +1,3 @@
+src_ip,dest_ip,original_class,z_n,s_n,new_class
+207.241.227.82,10.8.8.130,tunneling http trafficc,2.2675773871510522e-05,2.8172160831613994e-93,regular http traffic
+207.241.228.122,10.8.8.130,tunneling http trafficc,2.1946177219197968e-05,2.8013293059140766e-93,regular http traffic
