@@ -38,6 +38,8 @@
 - pkt_size 在兩者的分布也有區別；就是 vpn 存在明顯的上界(MAX: 1360)，並且size在自身範圍內分布均勻
 - 缺點是 data 不太多，但確實有機會分辨兩個族群，也許可以用生成相似資料去增加 data 量
 
+---
+
 ### 5/23
 這個資料夾分析了 VPN-NonVPN 五個 data folder 中的 http traffic。
 經過 emily 的 to_flow.py 把 flow 都分開之後，將圖統計並繪製，
