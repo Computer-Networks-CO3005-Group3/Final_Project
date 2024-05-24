@@ -21,11 +21,22 @@
 - 大部分的封包特性都重疊，分不太開，不是很理想的狀況
 
 
+### Spotify
+![3](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/bc8b2e1c-a2fb-428d-9fd2-797a2d1edf90)
 
-    
+分別為 VPN(左) 及 NonVPN(右) 的資料夾中得到的所有有關 spotify 的流量紀錄，下面一張把兩者疊起來。
+![vpn_nonvpn_result](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/c78bb1bf-781b-42db-8607-6e376d1fbe0a)
 
+同樣的問題，NonVPN 因為尺寸變化很大，這樣疊上 VPN 看不出分布的比較，因此將pkt_size範圍設定在0~2000
+![4](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/79a4ce19-9904-4a93-a444-fc10fa352d13)
 
+下面一張把兩者疊起來。
+![limited_vpn_nonvpn_result](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/a94e7df4-52b0-4370-a444-7c0b22e99316)
 
+### Spotify (pkt_size = 0-2000)結論:
+- time_diff 在兩者的分布有區別；特別是VPN的部分在-2.5~0之間有多
+- pkt_size 在兩者的分布也有區別；就是 vpn 存在明顯的上界13xx，並且size在自身範圍內分布均勻
+- 缺點是 data 不太多，但確實有機會分辨兩個族群，也許可以用生成相似資料去增加 data 量
 
 ### 5/23
 這個資料夾分析了 VPN-NonVPN 五個 data folder 中的 http traffic。
