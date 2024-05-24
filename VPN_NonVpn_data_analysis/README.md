@@ -3,7 +3,7 @@
 ### 5/24
 今天針對資料夾中，以"使用相同應用"(也就是相同名稱的csv檔)的紀錄做了一下更深入的對比和分析，發現 netflix 和 spotify 以這兩個為名稱的csv檔都同時有在 vpn 及 nonvpn 的資料夾中，因此先對兩者做了分析。
 
-## Netflix
+### Netflix
 ![1](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/c1cfd15c-c7a4-4997-b883-ac23944c1ebd)
 
 分別為 VPN(左) 及 NonVPN(右) 的資料夾中得到的所有有關 netflix 的流量紀錄，下面一張把兩者疊起來。
@@ -15,7 +15,7 @@
 下面一張把兩者疊起來。
 ![limited_vpn_nonvpn_result](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/73822955/d1865355-617d-4334-a891-205ae9ca56eb)
 
-## Netflix (pkt_size = 0-2000)結論:
+### Netflix (pkt_size = 0-2000)結論:
 - time_diff 的分布大多在取對數的-2~2；接近2的區域有更多
 - pkt_size 的分布在 vpn 和 nonvpn 有很大的區別，就是 vpn 存在明顯的上界
 - 大部分的封包特性都重疊，分不太開，不是很理想的狀況
