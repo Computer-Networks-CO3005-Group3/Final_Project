@@ -33,3 +33,14 @@
 ##### 目前N=2時的Hit ratio已經上升到0.978
 
 ##### 2024/5/24 21:30
+
+##### regular http traffic 訓練
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/0156dfa0-c9c6-46e0-a064-a69a72ebcef2)
+![Figure_0528r](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/2aee2bb2-2352-4590-8464-5cfda3be95d4)
+
+
+##### tunneling http traffic 訓練
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/cc644803-d4f2-4c21-8de4-05185b70b936)
+![Figure_0528t](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/184f25c9-28c0-44a7-af7f-fe310c996be2)
+
+##### 2024/5/28 10:10
