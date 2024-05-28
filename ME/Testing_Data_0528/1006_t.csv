@@ -1,0 +1,11 @@
+src_ip,dest_ip,pkt_size,time_diff,original_class
+0,0,877,0.02281830819842941,tunneling http traffic
+0,0,262,0.03999189592298142,tunneling http traffic
+0,0,1016,0.1140749786143466,tunneling http traffic
+0,0,371,0.017906610130322336,tunneling http traffic
+0,0,1278,2.845321492597054,tunneling http traffic
+0,0,486,1.3211282650162621,tunneling http traffic
+0,0,220,1.26405543009701,tunneling http traffic
+0,0,579,1.3466659313959675,tunneling http traffic
+0,0,1341,0.01361039343821979,tunneling http traffic
+0,0,251,11.45072707149164,tunneling http traffic
