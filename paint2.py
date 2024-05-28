@@ -64,7 +64,6 @@ def process_folder(folder_path):
 
     return N_list, hit_ratio_list
 
-# 使用範例
 folder_path = 'D:/Anomaly_Score_0528_t_3'  # 請替換為你的資料夾路徑
 N_list, hit_ratio_list = process_folder(folder_path)
 
