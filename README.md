@@ -1,7 +1,7 @@
 # Final_Project
 
 >## 6/1 會議記錄
->### 論文在 Nsects 比較高的原因:
+>### 論文在 Nsects 比較高時，準確率下降的原因:
 >- 推測是因為在看 regular 的 Anomaly score 在 flow 中看越多封包後，異常分數會累積並超過閾值，導致被判定為 tunneled，準確率下降。
 >
 >
