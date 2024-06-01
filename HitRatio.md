@@ -72,9 +72,20 @@
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/b483d10d-c296-4a50-9fc2-a796deece016)
 ![Figure_0528t3_N3](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/8c8675dc-417b-4e01-980f-b637bc199500)
 
+### Anomaly_Score_0601_r
+##### regular http traffic 訓練
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/f8e36434-c816-4450-98cb-7b21552fa695)
+![Figure_0601r](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/dd5f48cc-80f5-4e74-b506-8a39db0ba4b6)
+
+##### tunneling http traffic 訓練
+![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/61ea478a-3ada-4c51-887d-26c610e29427)
+![Figure_0601t](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/efa58407-b1ef-4654-bbe7-fe5c10962382)
+
+
+
 ### Anomaly_Score_0601_r_N4
 ##### regular http traffic 訓練
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/97155c83-1796-45c4-94c2-ad2ace66d369)
 ![Figure_0601r_N4](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/f1992df7-fd4e-43fc-aed5-704bc390e3a1)
 
-##### 2024/6/1 19:10
+##### 2024/6/1 19:15
