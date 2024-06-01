@@ -9,3 +9,8 @@ Step1使用0528_data產生所有數據
 Step2使用0531_fin計算所有需要的指紋
 =====================================
 此程式的功能在於讀取一個資料夾，遍歷其中的每個放有Step1產生的各個csv檔
+
+Step3下載0601_data+fin.zip就可以看到data和fingerprint
+=====================================
+以下附上最新的random範圍
+![442457803_1525872908139260_8802629281134793803_n](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/115610077/76b678d8-8f10-4484-8fe1-8cec44270bcb)
