@@ -48,6 +48,8 @@
 ##### regular http traffic 訓練
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/db74051c-0a34-408b-85f7-4578bdf340f9)
 ![Figure_0528r3](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/d79eef19-cec5-4144-8d80-a13ea51c7555)
+##### 不知道是不是python跑資料夾太聰明，會先跑N=10和N=11的CSV檔，推測可能是1比2排序前面，而不是按照數字大小排序，才導致會有位移的情形發生。
+##### (害我debug半天都找不出錯😡，最後只好土法煉鋼一筆一筆進去看) 
 
 ##### tunneling http traffic 訓練
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/e8cd16f1-6e10-4bfa-ab51-d4318608ad56)
@@ -88,4 +90,4 @@
 ![image](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/97155c83-1796-45c4-94c2-ad2ace66d369)
 ![Figure_0601r_N4](https://github.com/Computer-Networks-CO3005-Group3/Final_Project/assets/127335630/f1992df7-fd4e-43fc-aed5-704bc390e3a1)
 
-##### 2024/6/1 19:15
+##### 2024/6/1 19:55
